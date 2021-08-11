@@ -27,7 +27,17 @@ final class ViewController: UIViewController {
     }
 
     override func loadView() {
+        chatView.delegate = self
         self.view = chatView
+    }
+}
+
+// MARK:- ViewDelegate
+
+extension ViewController: ViewDelegate {
+    func onKeyboardReturn(message: String?) {
+        guard let message = message else { return }
+        socket.emit("message", message)
     }
 }
 
