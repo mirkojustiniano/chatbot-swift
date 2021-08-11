@@ -1,0 +1,24 @@
+PODS:
+  - Anchorage (4.5.0)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - Anchorage
+  - Socket.IO-Client-Swift (~> 16.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Anchorage
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 0fb62b8a2d1e9cccfd13bf6d5d644a35254d76a1
+
+COCOAPODS: 1.10.1
