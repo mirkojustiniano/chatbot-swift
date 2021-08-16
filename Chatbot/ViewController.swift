@@ -3,9 +3,9 @@ import SocketIO
 
 final class ViewController: UIViewController {
 
-    let chatView: View = View(frame: UIScreen.main.bounds)
-    let manager = SocketManager(socketURL: URL(string: "http://localhost:5000")!, config: [.log(true), .compress])
-    var socket:SocketIOClient!
+    private let chatView: View = View(frame: UIScreen.main.bounds)
+    private let manager = SocketManager(socketURL: URL(string: "http://localhost:5000")!, config: [.log(true), .compress])
+    private var socket: SocketIOClient!
 
     override func viewDidLoad() {
         super.viewDidLoad()
